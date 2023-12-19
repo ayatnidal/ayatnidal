@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+
+    <style>
+        .hidden-paragraph {
+            display: none;
+        }
+
+        ul {
+  list-style-type: none;
+  margin: 20px;
+  margin-right: 50px;
+  padding: 0;
+  overflow: hidden;
+}
+        a {
+  display: block;
+  padding: 8px;
+ 
+}
+li {
+    display: inline; float:right
+}
+
+
+li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Verdana,sans-serif;
+}
+li a:hover {
+   
+  background-color: #c27ada;
+}
+
+section {
+      float: left;   
+      padding: 20px;
+      box-sizing: border-box;
+      text-align:left; 
+      margin-top: 100PX;
+      margin-left: 10%;
+      width: 40%;
+    }
+
+    footer {
+      float: left; 
+      width: 60%;   
+     padding: 20px;
+      box-sizing: border-box;
+      text-align:left;
+      margin-left: 10%;
+    }
+    aside {
+        width :40%;
+        float:right;
+        margin-top: 40px;
+        display: block;
+        padding: 20px;
+        
+    }
+
+    p {
+        font-family: Verdana,sans-serif;
+        color: blueviolet;
+    }
+    pre{
+        font-family: Verdana,sans-serif;
+    }
+    #info{
+        
+        font-size: 25px;
+        color: blueviolet;
+    }
+
+    </style>
+    <title>ayat nidal</title>
+</head>
+<body>
+    
+<var> 
+    <ul >
+
+        <li><a href="contact.html"> <img src="ph.png" width="20" style="margin-left: auto; margin-right: auto;">  Contact me   </a></li>
+
+    
+        <li ><a href="aboutme.html"><img src="pe.jpg" width="15" style="margin-left: auto; margin-right: auto;">  about me   </a></li>
+        
+        <li ><a href="home.html"><img src="home.jpg" width="20">   Home   </a></li>
+
+
+      </ul> 
+ 
+</var>
+<section >
+
+
+    <p> Welcom to my site </p>
+    <div >
+    <pre class="info" id="info"><b>Alsalam alaykum , I'm 
+Ayat,a <span style="color: #d680da;">Computer Engineer
+</span>
+ </b> 
+</pre>
+
+
+<pre >I am a fourth-year computer systems 
+engineering student.I aspire to finish
+my bachelor’s degree from Palestine Polytechnic
+University.<p class="see-more-link" onclick="revealHiddenParagraph()" style="color:rgb(207, 100, 226)">See More ..</p></pre>
+<pre class="hidden-paragraph" id="hidden-paragraph">
+And work in a prestigious company and then obtain a master’s degree.
+And i have little experience with web development
+</pre>
+</div>
+
+</section>
+
+
+
+<aside> 
+
+    <img src="profile.jpg" alt="">
+
+</aside>
+
+
+
+<footer >
+
+<Button style="background-color:rgb(189, 63, 161); color: white; border-radius: 4px; border: 0;padding: 5px 15px; "> Hire me !</Button> 
+<Button style="margin-left: 10PX; color:rgb(170, 51, 142) ; " > See my project </Button>
+   
+</footer>
+
+
+
+
+
+
+
+
+<script>
+    function revealHiddenParagraph() {
+        var hiddenParagraph = document.getElementById("hidden-paragraph");
+        var seeMoreLink = document.querySelector(".see-more-link");
+
+        if (hiddenParagraph.style.display === "none") {
+            hiddenParagraph.style.display = "block";
+            seeMoreLink.innerHTML = "See Less";
+            moreText.style.display = "none";
+        } else {
+            hiddenParagraph.style.display = "none";
+            seeMoreLink.innerHTML = "See More ..";
+            moreText.style.display = "inline";
+        
+        }
+    }
+</script>
+</body>
+</html>     
